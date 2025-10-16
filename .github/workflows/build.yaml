@@ -1,0 +1,19 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+
+jobs:  
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+        - name: Say Hello              
+          run: echo "Hello Github Actions!"
+
