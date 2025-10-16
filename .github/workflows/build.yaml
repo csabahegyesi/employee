@@ -33,7 +33,7 @@ jobs:
       SPRING_DATASOURCE_PASSWORD: employees
     services:
       maria-db:
-        image: mariadb:12.1.1.-rc
+        image: mariadb:12.1.1-rc
         env:
           MYSQL_ROOT_PASSWORD: eployees
           MYSQL_DATABASE: employees
