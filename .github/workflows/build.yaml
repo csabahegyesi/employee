@@ -24,6 +24,7 @@ jobs:
             cache: 'maven'
 
         - name: Set version
+          id: set-version
           run: |
             VERSION="1.0.0-${GITHUB_RUN_NUMBER}"
                 echo "Version: $VERSION"            
